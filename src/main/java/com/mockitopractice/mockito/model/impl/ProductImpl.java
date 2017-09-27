@@ -1,0 +1,63 @@
+package com.mockitopractice.mockito.model.impl;
+
+import com.mockitopractice.mockito.model.Amount;
+import com.mockitopractice.mockito.model.Product;
+import com.mockitopractice.mockito.model.ProductType;
+
+/**
+ * Collateral Model Object.
+ */
+public class ProductImpl implements Product {
+
+    private long id;
+
+    private String name;
+
+    private ProductType type;
+
+    private Amount amount;
+
+    public ProductImpl(long id, String name, ProductType type, Amount amount) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.type = type;
+        this.amount = amount;
+    }
+
+    @Override
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public ProductType getType() {
+        return type;
+    }
+
+    public void setType(ProductType type) {
+        this.type = type;
+    }
+
+    @Override
+    public Amount getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Amount amount) {
+        this.amount = amount;
+    }
+}
